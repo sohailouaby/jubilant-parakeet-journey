@@ -1,1 +1,8 @@
 # jubilant-parakeet-journey
+
+## kicad project 1: first kicad projet OMG
+this project had bit of stuff in it, version 1 was just simply 2 THT LEDs, 2 THT resistors valued at 220 ohms, and a built in footprint of an arduino nano found in the footprint library.
+then on v2, it was an upgrade after learning more and ive built a custom footprint of the oled display, used a ESP32 wroom (the chip with wifi, bluetooth, and microcontroller), and header pins bcs the board would be useless without some way of connumication. screenshots ov versions are in the repository
+
+## kicad project 2: Practic PCBs(typo on practice but yea)
+this project also had a bit of versions going on but the changes were massive. version 1 was abt learning how to use capacitors and learning how to use USB. in that project, there is one THT led, a push button, a capacitor valued at around 10 uF or microfarads, and a USB a power only footprint. the goal was to learn how to implement USB power to power up electronic components. then, i thought to mydelf, what if i built a custom esp32 dev kit board. bcs the hardest part was capacitors and its placement. and now i know that, i felt ready. so after trial and err, failing 6 times on shcematic and pcb editor bcs the design and logic wasnt correct, ive ended up with a working esp32 board with USB c as the power input, couple resistors; few for usb identity, few for esp32. couple capacitors; few used for power stableness from usb, some for esp32, some for CH340C, and some for the power regulator. and we also have a power regulator to convert 5V USB c power into stable 3.3V power to esp32. added CH340C chip to make the board programmable and all that on a compact design and i was impressed bcs it sure does look like an actual esp32 board.
