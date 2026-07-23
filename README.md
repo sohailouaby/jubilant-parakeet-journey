@@ -1,8 +1,113 @@
 # jubilant-parakeet-journey
 
-## kicad project 1: first kicad projet OMG
-this project had bit of stuff in it, version 1 was just simply 2 THT LEDs, 2 THT resistors valued at 220 ohms, and a built in footprint of an arduino nano found in the footprint library.
-then on v2, it was an upgrade after learning more and ive built a custom footprint of the oled display, used a ESP32 wroom (the chip with wifi, bluetooth, and microcontroller), and header pins bcs the board would be useless without some way of connumication. screenshots ov versions are in the repository
+**Skills demonstrated**
+Here is what ive learned so u know what ive learned before reading the story
 
-## kicad project 2: Practic PCBs(typo on practice but yea)
-this project also had a bit of versions going on but the changes were massive. version 1 was abt learning how to use capacitors and learning how to use USB. in that project, there is one THT led, a push button, a capacitor valued at around 10 uF or microfarads, and a USB a power only footprint. the goal was to learn how to implement USB power to power up electronic components. then, i thought to mydelf, what if i built a custom esp32 dev kit board. bcs the hardest part was capacitors and its placement. and now i know that, i felt ready. so after trial and err, failing 6 times on shcematic and pcb editor bcs the design and logic wasnt correct, ive ended up with a working esp32 board with USB c as the power input, couple resistors; few for usb identity, few for esp32. couple capacitors; few used for power stableness from usb, some for esp32, some for CH340C, and some for the power regulator. and we also have a power regulator to convert 5V USB c power into stable 3.3V power to esp32. added CH340C chip to make the board programmable and all that on a compact design and i was impressed bcs it sure does look like an actual esp32 board.
+- KiCad
+- PCB Layout
+- ESP32
+- USB-C
+- CH340C
+- Voltage Regulation
+- Power Supply Design
+- Schematic Design
+
+## first kicad projet OMG
+
+## Overview
+
+This project documents my journey learning PCB design in KiCad. And it is abt how i built my first ocb and what did i learn from it.
+
+---
+
+## Version 1
+
+### Goal
+
+Learn how to use the software and built my first ever PCB in Kicad
+
+### Components
+
+- 2 THT leds
+- 2 THT resistors
+- Arduino Nano footprint
+
+### What I learned
+
+- How to read schematics and use them
+- How to route the components togther.
+- How to assign footprints based on the component that i wanted based on size.
+
+---
+
+## Version 2
+
+### Goal
+
+Go deeper on PCb design and work with an Esp32 wroom
+
+### Challenges
+
+When routing, i couldnt figure out how to route all header pins into the esp32 GPIO pins bcs the traces were interfeering each other.
+
+### Features
+
+- ESP32-WROOM
+- Header pins
+
+### Result
+
+After changing the header pins to individual ones, I managed to route all header pins to all GPIO pins and leanred how to work with the software confortably. Now it isnt heck intimidating as it used to be
+
+# Practice PCBs
+
+## Overview
+
+This project documents my journey learning PCB design in KiCad. Instead of building a finished project immediatly after project 1, i worked my way into building my own custom Esp32 dev kit board
+
+---
+
+## Version 1
+
+### Goal
+
+Learn how USB power and capacitors work.
+
+### Components
+
+- USB-A power connector footprint
+- LED
+- Push button
+- 10 µF capacitor
+
+### What I learned
+
+- USB can directly power simple circuits.
+- Capacitors help stabilize the power supply.
+- Basic PCB routing.
+
+---
+
+## Version 2
+
+### Goal
+
+Learn how to design a custom ESP32 development board from scratch and the components used.
+
+
+### Challenges
+
+I redesigned both the schematic and PCB six times because design logic was off and wasnt adding up. Each revision taught me how to organize my projects and learn how to distribute power to all of my components
+
+### Features
+
+- ESP32-WROOM
+- USB-C power input
+- CH340C USB-to-UART
+- 3.3 V voltage regulator
+- Decoupling capacitors
+- USB-C configuration resistors
+
+### Result
+
+After six redesigns, I have finally manged to build a Esp32 dev kit board that is almost like the commercial one and ive learned a lot like pcb routing, voltage regulators, capacitors, and more. Now, i can stop looking at a board like magic and see it like blocks to a funcioning PCB
