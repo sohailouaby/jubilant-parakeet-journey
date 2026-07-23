@@ -1,1 +1,1 @@
-# jubilant-parakeet-journey
+# added gallary of prohects and some schematics that impressed me
